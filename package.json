@@ -1,0 +1,23 @@
+{
+  "name": "sum",
+  "version": "1.0.0",
+  "description": "Wie schon bei der Aufgabe Grundschulmathe, wird erwartet, dass Sie für jede Teilaufgabe einen neuen branch anlegen. Bitte vergessen Sie dabei auch nicht den Buchstaben der Teilaufgabe, so dass die Branches dem Alphabet nach geordnet angezeigt werden können. Also z.B: git checkout -b a_base Als Ergebnis liefern sie bitte wieder den Link zu ihrem Repository an.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fr0zen3ye/String-Calc-Kata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fr0zen3ye/String-Calc-Kata/issues"
+  },
+  "homepage": "https://github.com/fr0zen3ye/String-Calc-Kata#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
