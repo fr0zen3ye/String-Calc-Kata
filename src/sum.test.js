@@ -18,9 +18,21 @@ describe('stringCalc', () => {
         expect(stringCalc("1,2")).toBe(3);
     })
 
-    it('should add 50 and 60 and return 112', () => {
+    it('should add 21 and 21 and return 42', () => {
         
-        expect(stringCalc("50,62")).toBe(112);
+        expect(stringCalc("21,21")).toBe(42);
+    })
+
+    it('should add 1, 2 and 3', () => {
+        expect(stringCalc("1,2,3")).toBe(6);
+    })
+
+    it('should add 1, 4, 6, 7', () => {
+        expect(stringCalc("1,4,6,7")).toBe(18);
+    })
+
+    it('should add 4, 5, 6, 7', () => {
+        expect(stringCalc("4,5,6,7")).toBe(22);
     })
 
 })
