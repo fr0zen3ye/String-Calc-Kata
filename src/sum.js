@@ -2,8 +2,8 @@
 function stringCalc(numbers) {
 
     let input = String(numbers);
-    let stringSplit = input.split(',');
-    
+    let stringSplit = input.split(/\n|,/).filter(it => it);
+    console
     if(stringSplit.length > 1){
 
         let addition = 0

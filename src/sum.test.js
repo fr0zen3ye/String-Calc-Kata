@@ -35,4 +35,16 @@ describe('stringCalc', () => {
         expect(stringCalc("4,5,6,7")).toBe(22);
     })
 
+    it('should get 6 for 1\n2,3', () => {
+        expect(stringCalc("1\n2,3")).toBe(6);
+    })
+
+    it('should get 6 for 1\n,2,3', () => {
+        expect(stringCalc("1\n,2,3")).toBe(6);
+    })
+
+    it('should get 7 for 2\n2,3', () => {
+        expect(stringCalc("2\n2,3")).toBe(7);
+    })
+
 })
