@@ -21,9 +21,8 @@ function stringCalc(numbers) {
         return NaN;
     }
 }
-
-
-const sum = stringCalc()
+const result = stringCalc(process.argv[2]);
+console.log("Das Ergebnis ist: " + result);
 
 module.exports = {
     stringCalc
