@@ -2,7 +2,7 @@
 function stringCalc(numbers) {
 
     let input = String(numbers);
-    let stringSplit = input.split(/\n|,/).filter(it => it);
+    let stringSplit = input.split(/[\n,;\/]/).filter(it => it);
     console
     if(stringSplit.length > 1){
 
