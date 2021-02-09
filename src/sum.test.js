@@ -43,16 +43,16 @@ describe('stringCalc', () => {
         expect(stringCalc("1\n,2,3")).toBe(6);
     })
 
-    it('should get 7 for 2\n2,3', () => {
-        expect(stringCalc("2\n2,3")).toBe(7);
+    it('should get 7 for 2\n2,_3', () => {
+        expect(stringCalc("2\n2,_3")).toBe(7);
     })
 
     it('should get 3 for /\n3,2', () => {
         expect(stringCalc("/\n3;2")).toBe(5);
     })
 
-    it('should get 4 for /;\n2,2', () => {
-        expect(stringCalc("/;\n2,20")).toBe(22);
+    it('should get 4 for /;\n2+,2', () => {
+        expect(stringCalc("/;\n2+,20")).toBe(22);
     })
 
     it('shoudl get 3 for //;\n1;2', () => {
