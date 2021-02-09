@@ -1,4 +1,3 @@
-
 function stringCalc(numbers) {
 
     let input = String(numbers);
