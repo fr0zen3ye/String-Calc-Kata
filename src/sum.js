@@ -7,7 +7,6 @@ function stringCalc(numbers) {
     if(stringSplit.length > 1){
 
         let addition = parseInt(stringSplit[0]) + parseInt(stringSplit[1]);
-        console.log(addition);
         return addition;
     }
     
