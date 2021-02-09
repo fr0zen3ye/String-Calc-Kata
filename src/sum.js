@@ -2,7 +2,7 @@ function stringCalc(numbers) {
 
     let input = String(numbers);
     let stringSplit = input.split(/[\n,+;\_\/]/).filter(it => it);
-    if(stringSplit.length > 1){
+    if(stringSplit.length > 0){
 
         let addition = 0
         for (i = 0; i<stringSplit.length ;i++) {
