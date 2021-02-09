@@ -8,7 +8,6 @@ function stringCalc(numbers) {
         for (i = 0; i<stringSplit.length ;i++) {
             addition = addition + parseInt(stringSplit[i]);
             if (stringSplit[i] < 0) {
-
                 console.log("negatives not allowed: " + numbers)
                 throw new Error("negatives not allowed");
             }
