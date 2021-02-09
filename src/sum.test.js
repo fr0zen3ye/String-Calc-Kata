@@ -80,4 +80,12 @@ describe('stringCalc', () => {
         expect(callNegatives).toThrowError(new Error("negatives not allowed"));
     })
 
+    it('should get "" when > 1000', () => {
+        expect(stringCalc("1,1000")).toBe(1)
+    })
+
+    it('should get "" when > 1000', () => {
+        expect(stringCalc("30,1020")).toBe(30)
+    })
+
 })
