@@ -9,6 +9,10 @@ function stringCalc(numbers) {
         let addition = 0
         for (i = 0; i<stringSplit.length ;i++) {
             addition = addition + parseInt(stringSplit[i]);
+            if (stringSplit[i] < i) {
+                console.log("negatives not allowed :" + stringSplit[i]);
+                return NaN;
+            }
         }
         return addition;
     }

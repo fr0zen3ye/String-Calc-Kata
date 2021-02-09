@@ -59,4 +59,16 @@ describe('stringCalc', () => {
         expect(stringCalc("//;\n1;2")).toBe(3);
     })
 
+    it('should get NaN when negatives', () => {
+        expect(stringCalc("-1,-4")).toBe(NaN);
+    })
+
+    it('should get NaN when negatives', () => {
+        expect(stringCalc("-1,-4,-6,-3")).toBe(NaN);
+    })
+
+    it('should get NaN when negatives', () => {
+        expect(stringCalc("-1,-4")).toBe(NaN);
+    })
+
 })
