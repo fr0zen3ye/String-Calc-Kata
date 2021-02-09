@@ -8,9 +8,9 @@ function stringCalc(numbers) {
         let addition = 0
         for (i = 0; i<stringSplit.length ;i++) {
             addition = addition + parseInt(stringSplit[i]);
-            if (stringSplit[i] < i) {
-                console.log("negatives not allowed :" + stringSplit[i]);
-                return NaN;
+            if (stringSplit[i] < 0) {
+                console.log("negatives not allowed :")
+                throw new Error("negatives not allowed");
             }
         }
         return addition;
@@ -21,6 +21,8 @@ function stringCalc(numbers) {
         return addition;
     }
 }
+
+
 const sum = stringCalc()
 
 module.exports = {

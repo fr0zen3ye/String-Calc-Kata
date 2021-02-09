@@ -59,16 +59,25 @@ describe('stringCalc', () => {
         expect(stringCalc("//;\n1;2")).toBe(3);
     })
 
-    it('should get NaN when negatives', () => {
-        expect(stringCalc("-1,-4")).toBe(NaN);
+    it('should get error when negatives', () => {
+        function callNegatives () {
+            stringCalc("-1,-4");
+        }
+        expect(callNegatives).toThrowError(new Error("negatives not allowed"));
     })
 
-    it('should get NaN when negatives', () => {
-        expect(stringCalc("-1,-4,-6,-3")).toBe(NaN);
+    it('should get error when negatives', () => {
+        function callNegatives () {
+            stringCalc("-1,-4,-6,-3");
+        }
+        expect(callNegatives).toThrowError(new Error("negatives not allowed"));
     })
 
-    it('should get NaN when negatives', () => {
-        expect(stringCalc("-1,-4")).toBe(NaN);
+    it('should get error when negatives', () => {
+        function callNegatives () {
+            stringCalc("1,-4");
+        }
+        expect(callNegatives).toThrowError(new Error("negatives not allowed"));
     })
 
 })
